@@ -12,7 +12,6 @@
 /* Core CSS required for Ionic components to work properly */
 @import "~@ionic/angular/css/core.css";
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
 /* Basic CSS for apps built with Ionic */
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
@@ -25,17 +24,18 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
 * {
-    //Instead of the line below you could use @include box-sizing($bs)
-  
-    box-sizing: border-box;
-    text-rendering: optimizeLegibility;
-    text-decoration: none;
-    font-family: 'Montserrat', 'Open Sans', sans-serif;
-    outline: none;
-  }
-  
-body, ion-content{
+  //Instead of the line below you could use @include box-sizing($bs)
+
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  outline: none;
+}
+
+body {
   --background: #0b3943; /* Old browsers */
   --background: -moz-linear-gradient(top, #0b3943 78%, #006063 100%); /* FF3.6-15 */
   --background: -webkit-linear-gradient(top, #0b3943 78%, #006063 100%); /* Chrome10-25,Safari5.1-6 */
@@ -49,7 +49,24 @@ body, ion-content{
       endColorstr='#006063',
       GradientType=0
     ); /* IE6-9 */
+  background: #0b3943; /* Old browsers */
+  background: -moz-linear-gradient(top, #0b3943 78%, #006063 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #0b3943 78%, #006063 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #0b3943 78%,
+    #006063 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr='#0b3943',
+      endColorstr='#006063',
+      GradientType=0
+    ); /* IE6-9 */
 }
-ion-content{
+main,
+ion-app,
+ion-content {
   display: block;
+  --background: transparent;
+  background: transparent;
 }

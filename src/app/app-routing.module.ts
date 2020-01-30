@@ -4,14 +4,19 @@ import { StartComponent } from './start/start.component';
 
 const routes: Routes = [
   {
-    path: 'in',
-    loadChildren: './tabs/tabs.module#TabsPageModule'
-  },
-  {
     path: '',
     component: StartComponent
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then((m) => m.HomePageModule)
+  },
+  {
+    path: 'list',
+    loadChildren: () => import('./list/list.module').then((m) => m.ListPageModule)
   }
 ];
+
 @NgModule({
   imports: [ RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }) ],
   exports: [ RouterModule ]

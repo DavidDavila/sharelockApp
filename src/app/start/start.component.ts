@@ -9,13 +9,11 @@ import { Router } from '@angular/router';
 export class StartComponent implements OnInit {
   constructor(private route: Router) {}
 
-  ngOnInit() {
-    
+  ngOnInit() {}
+  loginG() {
+    this.route.navigate([ 'home' ]);
   }
-  loginG(){
-    this.route.navigate(['in'])
-  }
-  loginFb(){
-    this.route.navigate(['in'])
+  loginFb() {
+    this.route.navigate([ 'home' ]);
   }
 }
