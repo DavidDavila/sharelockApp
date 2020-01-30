@@ -8,8 +8,7 @@
  * For more information on global stylesheets, visit the documentation:
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
-
-/* Core CSS required for Ionic components to work properly */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:100,300,400,500,700&display=swap'); /* Core CSS required for Ionic components to work properly */
 @import "~@ionic/angular/css/core.css";
 
 /* Basic CSS for apps built with Ionic */
@@ -31,37 +30,12 @@
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
   text-decoration: none;
-  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-family: 'Poppins', 'Open Sans', sans-serif;
   outline: none;
 }
 
 body {
-  --background: #0b3943; /* Old browsers */
-  --background: -moz-linear-gradient(top, #0b3943 78%, #006063 100%); /* FF3.6-15 */
-  --background: -webkit-linear-gradient(top, #0b3943 78%, #006063 100%); /* Chrome10-25,Safari5.1-6 */
-  --background: linear-gradient(
-    to bottom,
-    #0b3943 78%,
-    #006063 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(
-      startColorstr='#0b3943',
-      endColorstr='#006063',
-      GradientType=0
-    ); /* IE6-9 */
-  background: #0b3943; /* Old browsers */
-  background: -moz-linear-gradient(top, #0b3943 78%, #006063 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #0b3943 78%, #006063 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #0b3943 78%,
-    #006063 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(
-      startColorstr='#0b3943',
-      endColorstr='#006063',
-      GradientType=0
-    ); /* IE6-9 */
+  background: linear-gradient(to bottom, #0b3943 64%, #006949 100%);
 }
 main,
 ion-app,
