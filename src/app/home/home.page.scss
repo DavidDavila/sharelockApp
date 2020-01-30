@@ -1,4 +1,119 @@
-.welcome-card img {
-  max-height: 35vh;
-  overflow: hidden;
+
+ion-content{
+  --color: #fff;
+  .header{
+    h1{
+      font-size: 18px;
+      text-align: center;
+    }
+    h2{        
+      font-size: 30px;
+      font-family: "Roboto";
+      font-weight: 300;
+    }
+    p{
+      
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1px;
+    }
+  }
+  .card{
+    margin-bottom: 20px;
+    position: relative;
+    background: #fff;
+    color: #092b33;
+    padding:15px;
+    border-radius: 20px;
+        margin: 10px;
+        header{
+          margin-bottom: 5px;
+          display: flex;
+          img{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+flex: 1;
+          }
+          .name{
+            position: relative;
+    font-size: 13px;
+            flex: 9;
+
+          }
+          .icons{
+            flex: 2;
+            ion-icon{
+              position: relative;
+
+              width: 50%;
+              text-align: right;
+            }
+
+          }
+        }
+        section{
+          .title{
+            margin:0 0 5px;
+            
+    font-size: 12px;
+    font-family: 'Roboto';
+    font-weight: 600;
+          }
+          .statitics{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            li{
+              margin: 5px 0 ;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+              >span{
+                border-radius: 10px;
+                display: inline-block;
+                font-size: 28px;
+                font-weight: 300;
+                background-color: #eee;
+                padding: 10px;
+                width: 20vw;
+                height: 20vw;
+                small{
+                  font-size: 17px;
+                }
+              }
+              p{
+                margin: 0;
+                width: calc(100% - 20vw);
+                padding-left: 20px;
+                display: inline-block;
+                font-family: 'Roboto';
+                font-size: 14px;
+                font-weight: 600;
+                span{
+                                
+                  display: block;
+                  color: #295b66;
+                  font-size: 12.6px;
+                  font-weight: 500;
+                  font-family: 'Roboto';
+                }
+              }
+              ion-button{
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                font-size: 12px;
+                color: #fff;
+              }
+            }
+          
+          }
+        }
+  }
 }
