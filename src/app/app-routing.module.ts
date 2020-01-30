@@ -5,7 +5,7 @@ import { StartComponent } from './start/start.component';
 const routes: Routes = [
   {
     path: 'in',
-    loadChildren: () => import('./tabs/tabs.module').then((m) => m.TabsPageModule)
+    loadChildren: './tabs/tabs.module#TabsPageModule'
   },
   {
     path: '',
