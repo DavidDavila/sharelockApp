@@ -1,32 +1,48 @@
 <main>
-  <ion-slides>
+  <ion-slides mode="ios" pager="ios">
     <ion-slide>
       <header>Traders</header>
-      <img src="./assets/img/start/step1.png"/>
+      <img src="./assets/img/start/step1.png" />
       <h3>Sigue a traders profesionales</h3>
       <p>Evalúa sus operaciones y copia exactamente sus siguientes movimientos.</p>
-    </ion-slide>
 
+    </ion-slide>
     <ion-slide>
       <header>Señales en vivo</header>
-      <img src="./assets/img/start/step1.png"/>
+      <img src="./assets/img/start/step1.png" />
       <h3>Descubre dónde invertir tu dinero</h3>
-      <p>Visualiza a tiempo real dónde está el sentimiento del mercado</p>
-    </ion-slide>
+      <p>Visualiza a tiempo real cómo está el sentimiento del mercado</p>
 
-    <ion-slide>
-      <header>Vende tus señales</header>
-      <img src="./assets/img/start/step1.png"/>
-      <h3>What is Ionic Appflow?</h3>
-      <p><b>Ionic Appflow</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new level of app development agility to mobile dev teams.</p>
     </ion-slide>
-
     <ion-slide>
-      <img src="./assets/img/start/step1.png"/>
-      <h3>Ready to Play?</h3>
-      <ion-button fill="clear">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+      <header>Tus beneficios</header>
+      <img src="./assets/img/start/step1.png" />
+      <h3>Vende tus señales</h3>
+      <p>Pon precio a tus próximos movimientos y ayuda a otros traders a ganar dinero</p>
+
+    </ion-slide>
+    <ion-slide>
+      <section class="last">
+        <img src="./assets/img/start/login.png" />
+        <ion-row>
+          <ion-col size="12"  class="ion-text-center">
+            <h2>!Ya estamos casi!</h2>
+            <p>Sólo nos falta saber quién eres</p>
+            </ion-col>
+        </ion-row>
+      
+        <ion-row>
+        <ion-col size="6">
+          <ion-button  color="tertiary" color="dark"><ion-icon slot="start" name="logo-facebook"></ion-icon> Facebook</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button  color="tertiary"><ion-icon slot="start" name="logo-google"></ion-icon> Google +</ion-button>
+        </ion-col>
+      </ion-row>
+      </section>
+      
     </ion-slide>
 
   </ion-slides>
-  <footer><span class="rotate">></span> {{actualSlide}}/4 <span>></span></footer>
+  <!-- <footer><span class="rotate"><ion-icon slot="end" name="ios-arrow-back"></ion-icon></span> {{actualSlide}}/4 <span><ion-icon slot="end" name="ios-arrow-back"></ion-icon></span></footer> -->
 </main>

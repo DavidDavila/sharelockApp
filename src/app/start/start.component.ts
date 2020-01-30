@@ -9,5 +9,7 @@ export class StartComponent implements OnInit {
   public actualSlide = 1;
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    
+  }
 }

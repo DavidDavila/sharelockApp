@@ -12,6 +12,7 @@
 /* Core CSS required for Ionic components to work properly */
 @import "~@ionic/angular/css/core.css";
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
 /* Basic CSS for apps built with Ionic */
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
@@ -24,3 +25,12 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+* {
+    //Instead of the line below you could use @include box-sizing($bs)
+  
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    text-decoration: none;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    outline: none;
+  }
