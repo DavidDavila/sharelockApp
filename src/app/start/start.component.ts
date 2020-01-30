@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-start',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: [ './start.component.scss' ]
 })
 export class StartComponent implements OnInit {
-  public actualSlide = 1;
-  constructor() {}
+  constructor(private route: Router) {}
 
   ngOnInit() {
     
+  }
+  loginG(){
+    this.route.navigate(['in'])
+  }
+  loginFb(){
+    this.route.navigate(['in'])
   }
 }
