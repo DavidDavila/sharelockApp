@@ -1,15 +1,222 @@
-
-    <ion-buttons slot="start">
-      <ion-menu-button color="light"></ion-menu-button>
-    </ion-buttons> 
+<ion-buttons slot="start">
+  <ion-menu-button color="light"></ion-menu-button>
+</ion-buttons>
 <ion-content>
-  <ion-content>
-    <ion-refresher  (ionRefresh)="doRefresh($event)" slot="fixed" pullFactor="0.5" pullMin="50" >
-    <ion-refresher-content color="light">
-
-  </ion-refresher-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)" slot="fixed" pullFactor="0.5" pullMin="50">
+    <ion-refresher-content color="light"></ion-refresher-content>
   </ion-refresher>
-<main>
-  Me flipa
-</main>
+
+  <ion-row class="header">
+    <ion-col size="10" offset="1">
+      <ion-row>
+        <ion-col>
+          <h1>Jose, empieza un nuevo día<br>¡Suerte!</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" class="ion-no-margin">
+          <ion-row>
+            <ion-col class="ion-no-margin" size="6" class="ion-text-center">
+              <h2>0</h2>
+              <p>Señales enviadas</p>
+            </ion-col>
+            <ion-col size="6" class="ion-text-center ion-no-margin">
+              <h2>0<small> €</small></h2>
+              <p>Dinero ganado</p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+
+    </ion-col>
+  </ion-row>
+  <div class=" card send-signal ion-activatable">
+    <div>
+      Publica una nueva señal
+      <ion-icon slot="end" name="add"></ion-icon>
+    </div>
+    <ion-ripple-effect></ion-ripple-effect>
+
+  </div>
+  <article class="card ion-activatable">
+    <header>
+      <img src="assets/img/home/user-placeholder.png" alt="">
+      <div class="name">David Dávila</div>
+      <div class="icons">
+        <ion-icon name="heart-empty"></ion-icon>
+        <ion-icon name="heart" *ngIf="false"></ion-icon>
+        <ion-icon name="more"></ion-icon>
+      </div>
+    </header>
+    <section>
+      <p class="title">Estadísticas</p>
+      <article>
+        <ul class="statitics">
+          <li>
+            <span>100<small> %</small></span>
+            <p>
+              Índice de predicción
+              <span>1192 señales enviadas</span>
+            </p>
+            <ion-button (click)="loginG()" color="success">Analizar</ion-button>
+
+          </li>
+
+        </ul>
+      </article>
+    </section>
+    <ion-ripple-effect></ion-ripple-effect>
+  </article>
+
+  <article class="card ion-activatable">
+    <header>
+      <img src="assets/img/home/user-placeholder.png" alt="">
+      <div class="name">David Dávila</div>
+      <div class="icons">
+        <ion-icon name="heart-empty"></ion-icon>
+        <ion-icon name="heart" *ngIf="false"></ion-icon>
+        <ion-icon name="more"></ion-icon>
+      </div>
+    </header>
+    <section>
+      <p class="title">Estadísticas</p>
+      <article>
+        <ul class="statitics">
+          <li>
+            <span>97<small> %</small></span>
+            <p>
+              Índice de predicción
+              <span>1192 señales enviadas</span>
+            </p>
+            <ion-button (click)="loginG()" color="success">Analizar</ion-button>
+
+          </li>
+
+        </ul>
+      </article>
+    </section>
+    <ion-ripple-effect></ion-ripple-effect>
+  </article>
+  
+  <article class="card ion-activatable">
+    <header>
+      <img src="assets/img/home/user-placeholder.png" alt="">
+      <div class="name">David Dávila</div>
+      <div class="icons">
+        <ion-icon name="heart-empty"></ion-icon>
+        <ion-icon name="heart" *ngIf="false"></ion-icon>
+        <ion-icon name="more"></ion-icon>
+      </div>
+    </header>
+    <section>
+      <p class="title">Estadísticas</p>
+      <article>
+        <ul class="statitics">
+          <li>
+            <span>82<small> %</small></span>
+            <p>
+              Índice de predicción
+              <span>1192 señales enviadas</span>
+            </p>
+            <ion-button (click)="loginG()" color="success">Analizar</ion-button>
+
+          </li>
+
+        </ul>
+      </article>
+    </section>
+    <ion-ripple-effect></ion-ripple-effect>
+  </article>
+
+  <article class="card ion-activatable">
+    <header>
+      <img src="assets/img/home/user-placeholder.png" alt="">
+      <div class="name">David Dávila</div>
+      <div class="icons">
+        <ion-icon name="heart-empty"></ion-icon>
+        <ion-icon name="heart" *ngIf="false"></ion-icon>
+        <ion-icon name="more"></ion-icon>
+      </div>
+    </header>
+    <section>
+      <p class="title">Estadísticas</p>
+      <article>
+        <ul class="statitics">
+          <li>
+            <span>77<small> %</small></span>
+            <p>
+              Índice de predicción
+              <span>1192 señales enviadas</span>
+            </p>
+            <ion-button (click)="loginG()" color="success">Analizar</ion-button>
+
+          </li>
+
+        </ul>
+      </article>
+    </section>
+    <ion-ripple-effect></ion-ripple-effect>
+  </article>
+
+  <article class="card ion-activatable">
+    <header>
+      <img src="assets/img/home/user-placeholder.png" alt="">
+      <div class="name">David Dávila</div>
+      <div class="icons">
+        <ion-icon name="heart-empty"></ion-icon>
+        <ion-icon name="heart" *ngIf="false"></ion-icon>
+        <ion-icon name="more"></ion-icon>
+      </div>
+    </header>
+    <section>
+      <p class="title">Estadísticas</p>
+      <article>
+        <ul class="statitics">
+          <li>
+            <span>57<small> %</small></span>
+            <p>
+              Índice de predicción
+              <span>1192 señales enviadas</span>
+            </p>
+            <ion-button (click)="loginG()" color="success">Analizar</ion-button>
+
+          </li>
+
+        </ul>
+      </article>
+    </section>
+    <ion-ripple-effect></ion-ripple-effect>
+  </article>
+
+  <article class="card ion-activatable">
+    <header>
+      <img src="assets/img/home/user-placeholder.png" alt="">
+      <div class="name">David Dávila</div>
+      <div class="icons">
+        <ion-icon name="heart-empty"></ion-icon>
+        <ion-icon name="heart" *ngIf="false"></ion-icon>
+        <ion-icon name="more"></ion-icon>
+      </div>
+    </header>
+    <section>
+      <p class="title">Estadísticas</p>
+      <article>
+        <ul class="statitics">
+          <li>
+            <span>12<small> %</small></span>
+            <p>
+              Índice de predicción
+              <span>1192 señales enviadas</span>
+            </p>
+            <ion-button (click)="loginG()" color="success">Analizar</ion-button>
+
+          </li>
+
+        </ul>
+      </article>
+    </section>
+    <ion-ripple-effect></ion-ripple-effect>
+  </article>
+
 </ion-content>
