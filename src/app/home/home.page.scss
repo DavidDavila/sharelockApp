@@ -155,18 +155,18 @@ ion-content {
       rgba(249, 248, 120, 1) 89%,
       rgba(249, 248, 120, 1) 100%
     );
-    color: #0b3943;
     > div {
       padding: 20px 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       font-weight: 600;
-      color: #0b3943;
+      
+    text-shadow: 0 0 2px #fff;
       ion-icon {
         font-size: 25px;
         border: 2px solid #0b3943;
-        color: #0b3943;
+        color: inherit;
         border-radius: 50%;
       }
     }
