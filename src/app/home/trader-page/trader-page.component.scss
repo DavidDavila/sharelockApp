@@ -1,3 +1,7 @@
+ion-refresher {
+  --color: #f9f878;
+  color: #f9f878;
+}
 hidenav-stretchheader {
   color: white;
   
@@ -107,7 +111,6 @@ ion-content {
   --color: #0b3943;
   
   .swiper-container{
-    padding: 20px 0;
     .swiper-slide{
         display: block;
     }

@@ -26,6 +26,9 @@
   </div>
 </hidenav-stretchheader>
 <ion-content hidenav-sh-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)" slot="fixed" pullFactor="0.5" pullMin="50">
+    <ion-refresher-content color="light"></ion-refresher-content>
+  </ion-refresher>
   <ion-slides >
     <ion-slide>
       <app-new-signals></app-new-signals>
