@@ -1,0 +1,41 @@
+<hidenav-stretchheader init-expanded="true" header-height="85" opacity-color="#0b3943" opacity-factor="10" no-border="true">
+  <div #shrinkexpand class="stretch" >
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+        <img src="assets/img/home/user-placeholder.png" alt="">
+
+      </ion-col>
+    </ion-row>
+    
+  </div>
+  <div #static class="overlay">  
+    Jose Rodriguez
+  <div>
+    <ul>
+      <li><a class="active">New Signals</a></li>
+      <li><a>Active Signals</a></li>
+      <li><a>Historical</a></li>
+    </ul>
+  </div>
+  </div>
+  <ion-icon class="back" #static name="arrow-back" [routerLink]="['/home']"></ion-icon>
+  <div class="icons-header" #static>
+      <ion-icon name="heart-empty"></ion-icon>
+      <ion-icon name="heart" *ngIf="false"></ion-icon>
+      <ion-icon name="more"></ion-icon>
+  </div>
+</hidenav-stretchheader>
+<ion-content hidenav-sh-content>
+  <ion-slides >
+    <ion-slide>
+      <app-new-signals></app-new-signals>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 2</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>

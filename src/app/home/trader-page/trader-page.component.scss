@@ -1,0 +1,116 @@
+hidenav-stretchheader {
+  color: white;
+  
+  z-index: 2;
+  ion-icon.back {
+    color: #eee;
+    font-size: 23px;
+    line-height: 51px;
+    font-weight: 600;
+    padding: 14px 3px;
+  }
+  .stretch {
+    height: 195px;
+    
+    background: linear-gradient(to bottom, #0b3943 64%, #006949 100%);
+    color: #eee;
+    padding: 20px 20px 40px;
+    img {
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      object-position: center;
+      border: 3px solid #fff;
+
+    }
+  }
+  .icons-header {
+      
+    padding: 14px 3px;
+    right: 0;
+    width: 70px;
+    color: #eee;
+    ion-icon {
+      position: relative;
+      font-size: 25px;
+      width: 50%;
+      text-align: right;
+    }
+  }
+  .overlay {
+    display: flex;
+    flex-wrap: wrap;
+    color: #eee;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: center;
+    padding: 0px 10px;
+    bottom: 0;
+    line-height: 51px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    
+    line-height: 1;
+    div{
+        flex: 0 100%;
+        display: flex;
+        margin: 0;
+        line-height: 1;
+        padding: 15px 0 0;
+        ul{
+            display: flex;
+            margin: 0;
+            width: 100%;
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+
+            li{
+                margin: 0;
+                line-height: 1;
+                flex:1;
+                padding-bottom: 15px;
+                a{
+                    line-height: 1;
+                    border-bottom: 2px solid transparent;
+                    color: #eee;
+                    font-size: 14px;
+                    padding: 0 5px 1px;
+
+                    &.active{
+                        color:#f9f878;
+                        border-bottom: 2px solid #f9f878;
+                        color: #f9f878;
+                        border-bottom: 1.5px solid #f9f878;
+
+                    }
+
+                }
+            }
+        }
+    }
+  }
+  .menu {
+    width: 100%;
+
+    color: #0b3943;
+  }
+}
+
+ion-content {
+    --background: #eee;
+  --color: #0b3943;
+  
+  .swiper-container{
+    padding: 20px 0;
+    .swiper-slide{
+        display: block;
+    }
+  }
+}
