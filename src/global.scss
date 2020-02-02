@@ -38,7 +38,7 @@ body, app-home {
 }
 main,
 ion-app,
-ion-content {
+ion-content,ion-modal,ion-modal,.modal-wrapper {
   display: block;
   --background: transparent;
   background: transparent;
