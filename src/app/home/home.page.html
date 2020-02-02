@@ -1,4 +1,4 @@
-<ion-buttons slot="start">
+<ion-buttons class="ion-justify-content-end" >
   <ion-menu-button color="light"></ion-menu-button>
 </ion-buttons>
 <ion-content>
@@ -31,7 +31,9 @@
 
     </ion-col>
   </ion-row>
-  <div class=" card send-signal ion-activatable">
+  <ion-icon class="filter ion ion-md-funnel" name="funnel" (click)="presentActionSheet()"></ion-icon>
+
+  <div class=" card send-signal ion-activatable"  >
     <div>
       Publica una nueva señal
       <ion-icon slot="end" name="add"></ion-icon>
@@ -40,7 +42,7 @@
 
   </div>
 
-  <article class="card ion-activatable">
+  <article class="card ion-activatable" [routerLink]="['trader']">
     <header>
       <img src="assets/img/home/user-placeholder.png" alt="">
       <div class="name">David Dávila</div>
@@ -101,7 +103,7 @@
       <article>
         <ul class="statitics">
           <li>
-            <span>100<small> %</small></span>
+            <span>92<small> %</small></span>
             <div>
               <p>
                 Total de señales

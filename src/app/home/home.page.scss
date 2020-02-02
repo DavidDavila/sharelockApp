@@ -2,7 +2,12 @@ ion-refresher {
   --color: #f9f878;
   color: #f9f878;
 }
-
+.filter {
+  position: absolute;
+  right: 10px;
+  transform: translateY(-20px);
+  font-size: 20px;
+}
 ion-content {
   --color: #fff;
   .header {
@@ -140,7 +145,7 @@ ion-content {
         }
         &.active {
           &:before {
-            background-color: #4adb7f;
+            background-color: #2cb073;
           }
         }
       }
@@ -151,7 +156,7 @@ ion-content {
     padding: 5px;
     background: linear-gradient(
       135deg,
-      rgba(44, 176, 115, 1) 0%,
+      #2cb073 0%,
       rgba(249, 248, 120, 1) 89%,
       rgba(249, 248, 120, 1) 100%
     );
